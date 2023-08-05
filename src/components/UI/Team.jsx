@@ -6,6 +6,29 @@ import team02 from "../../images/team-02.png";
 import team03 from "../../images/team-03.png";
 import team04 from "../../images/team-04.png";
 
+const teamMembers = [
+  {
+    imgUrl: team01,
+    name: "Dave Hurry",
+    position: "Product Developer",
+  },
+  {
+    imgUrl: team02,
+    name: "Linda Walton",
+    position: "Front-End Developerr",
+  },
+  {
+    imgUrl: team03,
+    name: "Harry Martin",
+    position: "Product Designer",
+  },
+  {
+    imgUrl: team04,
+    name: "John Cooper",
+    position: "CEO",
+  },
+];
+
 const Team = () => {
   return (
     <section className="our__team">
@@ -18,24 +41,26 @@ const Team = () => {
         </div>
 
         <div className="team__wrapper">
-          <div className="team__item">
-            <div className="team__img">
-              <img src={team01} alt="" />
-            </div>
-            <div className="team__details">
-              <h4>Courtney Hurry</h4>
-              <p className="description">Product Developer</p>
+          {teamMembers.map((item, index) => (
+            <div className="team__item" key={index}>
+              <div className="team__img">
+                <img src={item.imgUrl} alt="" />
+              </div>
+              <div className="team__details">
+                <h4>{item.name}</h4>
+                <p className="description">{item.position}</p>
 
-              <div className="team__member-social">
-                <span>
-                  <i class="ri-linkedin-line"></i>
-                </span>
-                <span>
-                  <i class="ri-twitter-line"></i>
-                </span>
+                <div className="team__member-social">
+                  <span>
+                    <i class="ri-linkedin-line"></i>
+                  </span>
+                  <span>
+                    <i class="ri-twitter-line"></i>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

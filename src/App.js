@@ -7,6 +7,7 @@ import Services from "./components/UI/Services";
 import About from "./components/UI/About";
 import Team from "./components/UI/Team";
 import Blog from "./components/UI/Blog";
+import Testamonial from "./components/UI/Testamonial";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Team />
       <Blog />
+      <Testamonial />
     </>
   );
 }

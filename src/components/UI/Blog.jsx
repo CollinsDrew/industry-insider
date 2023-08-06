@@ -9,19 +9,19 @@ const blogData = [
   {
     imgUrl: videoImg,
     title: "Video",
-    desc: "Learn More About The Work we Do",
+    desc: "Learn More About The Work we Do....",
     linkUrl: "#",
   },
   {
     imgUrl: articleImg,
-    title: "Artcle",
-    desc: "Want To Improve The way Your Brand Interacts With Customers?",
+    title: "Article",
+    desc: "Want To Improve The way Your Brand Interacts With Customers? Let's Talk....",
     linkUrl: "#",
   },
   {
     imgUrl: caseStudy,
     title: "Case Study",
-    desc: "Boost Your Conversation Rate",
+    desc: "Boost Your Conversation Rate With Us....",
     linkUrl: "#",
   },
 ];

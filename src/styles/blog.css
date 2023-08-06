@@ -1,6 +1,6 @@
 .blog__top-content {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .blog__item {
@@ -8,6 +8,7 @@
   padding: 30px 20px;
   background: var(--card-bg);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .blog__item h3 {
@@ -33,4 +34,20 @@
 .learn__more i {
   font-size: 1.8rem;
   color: var(--primary-color);
+}
+
+.blog__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog__item:nth-child(2) .blog__img {
+  margin-top: -100px;
+  margin-bottom: -10px;
+}
+
+.blog__item:nth-child(2) {
+  width: 33%;
+  margin-top: -70px;
 }
